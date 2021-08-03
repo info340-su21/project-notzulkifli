@@ -25,7 +25,6 @@ header{
 
 ul{
     width: auto;
-    float: right;
     margin-top: 8px;
 }
 
@@ -49,9 +48,7 @@ a:hover, button:hover{
 }
 
 h1{
-    position: absolute;
     padding: 3px;
-    float: left;
     margin-left: 2%;
     margin-top: 10px;
     color: #fff;
@@ -60,6 +57,8 @@ h1{
 .objective{
     font-family: 'Open Sans' sans-serif;
     font-size: 1.2em;
+    display: flex;
+    justify-content: center;
 }
 
 label > p{
@@ -105,27 +104,5 @@ footer{
 img{
     height: 400px;
     width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-div{
-    display: inline-block;
-    flex-direction: row;
-    justify-content:space-between;
-    width: 50%;
-    height: 50%;
-    color: red;
-}
-
-h2{
-    text-align: center;
-}
-
-/* If the width >= 798px */
-@media (min-width: 798px) {
-    body{
-
-    }
+    
 }
