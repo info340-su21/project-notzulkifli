@@ -51,7 +51,7 @@ h1{
     font-family: 'Open Sans' sans-serif;
     font-size: 1.2em;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 label > p{
@@ -65,8 +65,9 @@ label > p{
 footer{
     color: black;
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: skyblue;
+    padding-bottom: 2.5rem;
 }
 
 .logo{
@@ -76,8 +77,8 @@ footer{
     background-size: auto;
     background-repeat: no-repeat;
     padding-top: 1em;
-    width: 100px;
-    height: 250px;
+    width: 250px;
+    height: 100px;
 }
 
 a, button{
@@ -186,3 +187,46 @@ a:hover, button:hover{
     width: 95%;
 }
 
+.about-us-container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.about-us-img-border{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-us-img-crop{
+    flex:0 0 250px;
+    margin: .5rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.social-media-icons{
+    display: block;
+    justify-content: space-between;
+}
+
+.feedback {
+    margin: .5rem 0;
+    padding: .5rem;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.button-submit{
+    color: black;
+}
+
+.day-header {
+    text-align: center;
+}
+
+.box-border{
+    border: 1px solid gray;
+}
