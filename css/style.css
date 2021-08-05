@@ -1,0 +1,182 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: black;
+}
+
+.intro {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: red;
+    background-color: yellow;
+    font-size: 20;
+}
+
+body, html{
+    font-family: 'Open Sans' sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: skyblue;
+}
+
+ul{
+    width: auto;
+    margin-top: 8px;
+}
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+    line-height: 100px;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+h1{
+    padding: 3px;
+    margin-left: 2%;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.objective{
+    font-family: 'Open Sans' sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+label > p{
+    line-height: 0.5em;
+}
+
+.contact{
+    color: blue;
+}
+
+footer{
+    color: #black;
+    width: 100%;
+    height: 100px;
+    background-color: skyblue;
+}
+
+.logo{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-image: url('../img/favicon-32x32.png');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a, button{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover, button:hover{
+    color: #f0c330;
+    transition: 0.5s;
+}
+
+
+/*Explore Page Specific*/
+.explore-card-button {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+}
+
+a:hover, button:hover{
+    color: #f0c330;
+    transition: 0.25s;
+}
+
+.section-header{
+    height: 60px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: -6px;
+    margin-top: 16px;
+}
+
+.container {
+    padding: 20px;
+    margin: .5rem;
+    flex: 1;
+}
+
+.explore-card-body {
+    width: 250px;
+    height: 250px;
+    background: #eee;
+    border-radius: 10px;
+    box-shadow: 01px 3px rgba(0,0,0,0.16), 01px 3px rgba(0,0,0,0.23);
+    overflow: hidden;
+}
+
+.time-posted{
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.explore-card-body p {
+    font-size: .8em;
+    background: white;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+
+.container-header {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.explore-card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: -6px;
+    margin-top: 2px;
+}
+
+.time-posted {
+    font-size: 1rem;
+}
+
+.tutorial-content-container {
+    padding: 10px;
+    display: flex;
+}
+
+.tutorial-content-container .explore-card-body {
+    margin: .45rem;
+}
+
+.card-body-content {
+    margin: .45rem;
+}
+
+.card-img-crop {
+    max-height: 140px;
+    overflow: hidden;
+}
+
+.card-img-crop img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
