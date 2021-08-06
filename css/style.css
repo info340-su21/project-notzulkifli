@@ -230,3 +230,45 @@ a:hover, button:hover{
 .box-border{
     border: 1px solid gray;
 }
+
+/*Sample Explore Analysis Page Specific*/
+.explore-analysis-container {
+    display: flex;
+	height: 100%;
+    padding: 0em 5em;
+    justify-content: space-around;
+}
+
+.explore-analysis-section1 {
+    width: 40%;
+}
+
+.explore-analysis-section2 {
+    width: 40%;
+}
+
+.card-analyze-section1-img-crop {
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card-analyze-img-crop {
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+}
+
+.hyperlink-text {
+    text-align: none;
+    color: blue;
+}
+
+.hyperlink-text:hover {
+    color: #f0c330;
+    transition: 0.1s;
+}
+
+.explore-analysis-section2-container {
+    justify-content: center;
+}
