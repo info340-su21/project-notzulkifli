@@ -52,6 +52,7 @@ h1{
     font-size: 1.2em;
     display: flex;
     justify-content: space-evenly;
+    padding: 5%;
 }
 
 label > p{
@@ -229,6 +230,10 @@ a:hover, button:hover{
 
 .box-border{
     border: 1px solid gray;
+    width: 45%;
+    padding: 1.5%;
+    box-shadow: 0 2px 3px #000;
+    border-radius: 10px;
 }
 
 /*Sample Explore Analysis Page Specific*/
@@ -277,4 +282,15 @@ a:hover, button:hover{
     width: 60px;
     height: 60px;
     display: none;
+}
+
+.myplan-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.header-img {
+    width: 40px;
+    height: 40px;
 }
