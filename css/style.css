@@ -272,3 +272,9 @@ a:hover, button:hover{
 .explore-analysis-section2-container {
     justify-content: center;
 }
+
+.nav-icons {
+    width: 60px;
+    height: 60px;
+    display: none;
+}
