@@ -1,6 +1,6 @@
 # INFO 340 Project
 
-Group 13: John Boyle, Shriyansh Sharma, and Zulkifli Sales
+Group 13: John Boyle, Shriyansh Sharma, Samuel Taylor, and Zulkifli Sales
 
 Date: 07/27/2021
 
