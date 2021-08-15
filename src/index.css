@@ -1,0 +1,369 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: black;
+}
+
+.intro {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: red;
+    background-color: yellow;
+    font-size: 20;
+}
+
+body, html{
+    font-family: 'Open Sans' sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    text-align: right;
+}
+
+ul{
+    width: auto;
+    margin-top: 8px;
+}
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+    line-height: 100px;
+    font-size: 1.5em;
+}
+
+h1{
+    padding: 3px;
+    margin-left: 2%;
+    margin-top: 10px;
+    color: black;
+}
+
+.objective{
+    font-family: 'Open Sans' sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+label > p{
+    line-height: 0.5em;
+}
+
+.contact{
+    color: blue;
+}
+
+footer{
+    color: black;
+    width: 100%;
+    height: auto;
+    background-color: skyblue;
+    padding-bottom: 2.5rem;
+}
+
+.logo{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-position: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+    width: 250px;
+    height: 100px;
+}
+
+a, button{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover, button:hover{
+    color: #f0c330;
+    transition: 0.5s;
+}
+
+
+/*Explore Page Specific*/
+.explore-card-button {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+}
+
+a:hover, button:hover{
+    color: #f0c330;
+    transition: 0.25s;
+}
+
+.section-header{
+    height: 60px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: -6px;
+    margin-top: 16px;
+}
+
+.container {
+    padding: 20px;
+    margin: .5rem;
+    flex: 1;
+}
+
+.explore-card-body {
+    width: 250px;
+    height: 250px;
+    background: #eee;
+    border-radius: 10px;
+    box-shadow: 01px 3px rgba(0,0,0,0.16), 01px 3px rgba(0,0,0,0.23);
+    overflow: hidden;
+}
+
+.time-posted{
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.explore-card-body p {
+    font-size: .8em;
+    background: white;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+
+.container-header {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.explore-card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: -6px;
+    margin-top: 2px;
+}
+
+.time-posted {
+    font-size: 1rem;
+}
+
+.tutorial-content-container {
+    padding: 10px;
+    display: flex;
+}
+
+.tutorial-content-container .explore-card-body {
+    margin: .45rem;
+}
+
+.card-body-content {
+    margin: .45rem;
+}
+
+.card-img-crop {
+    max-height: 140px;
+    overflow: hidden;
+}
+
+.card-img-crop img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.about-us-container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.about-us-img-border{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-us-img-crop{
+    flex:0 0 250px;
+    margin: .5rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.social-media-icons{
+    display: block;
+    justify-content: space-between;
+}
+
+.feedback {
+    margin: .5rem 0;
+    padding: .5rem;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.button-submit{
+    color: black;
+}
+
+.day-header {
+    text-align: center;
+}
+
+.box-border{
+    border: 1px solid gray;
+    width: 45%;
+    padding: 1.5%;
+    box-shadow: 0 2px 3px #000;
+    border-radius: 10px;
+}
+
+/*Sample Explore Analysis Page Specific*/
+.explore-analysis-container {
+    display: flex;
+	height: 100%;
+    padding: 0em 5em;
+    justify-content: space-around;
+}
+
+.explore-analysis-section1 {
+    width: 40%;
+}
+
+.explore-analysis-section2 {
+    width: 40%;
+}
+
+.card-analyze-section1-img-crop {
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card-analyze-img-crop {
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+}
+
+.hyperlink-text {
+    text-align: none;
+    color: blue;
+}
+
+.hyperlink-text:hover {
+    color: #f0c330;
+    transition: 0.1s;
+}
+
+.explore-analysis-section2-container {
+    justify-content: center;
+}
+
+.nav-icons {
+    width: 60px;
+    height: 60px;
+}
+
+.myplan-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.header-img {
+    width: 40px;
+    height: 40px;
+}
+
+.day-arrow{
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.arrow-button{
+    background-color: none;
+    text-decoration: none;
+}
+
+/* if width is between 598px and 767px */
+@media (min-width: 598px) and (max-width: 767px) {
+    .nav-text{
+        display: none;
+    }
+
+    .tutorial-content-container, .about-us-container{
+        flex-wrap: wrap;
+    }
+    h1, h2{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.4rem;
+    }
+
+    .explore-card-body{
+        align-items: stretch;
+    }
+
+    label {
+        font-size: x-large;
+    }
+    body{
+        background-color: #fff8e7
+    }
+
+    .card-analyze-section1-img-crop, .card-analyze-img-crop {
+        width: 300px;
+        height: 150px;
+    }
+    .explore-analysis-container{
+        padding-left: 2%;
+    }
+}
+
+/* if width is >= 768px */
+@media (min-width: 768px) {
+    .nav-icons{
+        display: none;
+        justify-content: space-evenly;
+    }
+}
+
+/* if width is between 768px and  */
+@media (min-width: 768px) and (max-width: 906px) {
+    li.nav-text{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .tutorial-content-container, .about-us-container{
+        flex-wrap: wrap;
+    }
+}
+
+/* if width is >= 992px */
+@media (min-width: 992px) {
+    .nav-icons{
+        display: contents;
+    }
+}
