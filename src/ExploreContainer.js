@@ -30,7 +30,9 @@ export function TutorialContainer(props) {
     return (
         <div class="tutorial-container">
             <h2 class="container-header">{title}</h2>
-            <p class="time-posted">Information updated <time datetime="2021-08-20">8/20/2021</time> </p>
+            <div>
+                <input type="text" placeholder="search..."/>
+            </div>
             <div class="tutorial-content-container">
                 {cards}
             </div>

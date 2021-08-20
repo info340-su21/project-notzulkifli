@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Button } from 'reactstrap';
 
 
 export function MyPlan() {
@@ -21,7 +22,6 @@ return (
 
         <main>
                 <h1>Check Body Statistic:</h1>
-                
                 <section className="myplan-container">
                     <div>
                         <form action="" onSubmit={calc}>
@@ -29,7 +29,7 @@ return (
                             <input type="text" id="height" name="height" value={height} onChange={(inputtedValue) => setHeight(inputtedValue.target.value)} /><br></br>
                             <label for="weight">Weight(lbs):</label><br></br>
                             <input type="text" id="weight" name="weight" value={weight} onChange={(inputtedValue) => setWeight(inputtedValue.target.value)}  /><br></br>
-                            <button type="submit" value="Submit">Calculate</button>
+                            <Button color="success" type="submit" value="Submit">Calculate</Button>{' '}
                         </form>
                     </div>
                     <div className="bmi-scale">

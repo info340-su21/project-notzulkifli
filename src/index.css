@@ -82,7 +82,7 @@ footer{
     height: 100px;
 }
 
-a, button{
+a{
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -313,6 +313,10 @@ a:hover, button:hover{
 .arrow-button{
     border: none;
     background: transparent;
+}
+
+.bmi-button {
+    text-decoration: none;
 }
 
 /* if width is between 598px and 767px */

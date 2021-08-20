@@ -1,7 +1,6 @@
 
 export default function ExploreExerciseAnalyze(props) {
     const cardInfo = props.cardInfo;
-    const title = cardInfo.title;
     return (
         <div class="explore-analysis-container">
             <div class="explore-analysis-section1">
