@@ -88,6 +88,8 @@ a, button{
     text-decoration: none;
 }
 
+
+
 a:hover, button:hover{
     color: #f0c330;
     transition: 0.5s;
@@ -303,8 +305,8 @@ a:hover, button:hover{
     padding-right: 20px;
 }
 .arrow-button{
-    background-color: none;
-    text-decoration: none;
+    border: none;
+    background: transparent;
 }
 
 /* if width is between 598px and 767px */

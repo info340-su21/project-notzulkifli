@@ -2,7 +2,7 @@ export function MainHome() {
     return (
             <main>
                 <body>
-                    <h1 className="day-header"><img src="img/left-arrow.png" className="day-arrow" alt="Arrow pointing left"></img>&nbsp;Day 1/20&nbsp;<img src="img/right-arrow.png" className="day-arrow" alt="Arrow pointing right"></img></h1>
+                    <h1 className="day-header"><button className="arrow-button"><img src="img/left-arrow.png" className="day-arrow" alt="Arrow pointing left"></img></button>&nbsp;Day 1/20&nbsp;<button className="arrow-button"><img src="img/right-arrow.png" className="day-arrow" alt="Arrow pointing right"></img></button></h1>
                     <p></p>
                     <h2 className="day-header">Did you complete your plan for today?</h2>
                     <section className="objective">
