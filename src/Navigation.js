@@ -2,6 +2,21 @@ import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import { AboutUs } from "./About";
 import { MainHome } from "./Home";
 import { MyPlan } from "./myPlan";
+import { ExploreContainer } from "./ExploreContainer";
+
+const props1 = [
+    {title: "Pushups", picture: "img/pushupExplore.jpg", desc: "lorem ibusm"},
+    {title: "Pullups", picture: "img/pushupExplore.jpg", desc: "lorem ibusm"},
+    {title: "Benchpress", picture: "img/pushupExplore.jpg", desc: "lorem ibusm"},
+    {title: "Benchpressasdasdsa", picture: "img/pushupExplore.jpg", desc: "lorem ibusm"}
+];
+
+const props2 = [
+{title: "Vegan", picture: "img/pushupExplore.jpg", desc: "lorem ibusm"},
+{title: "Pullups", picture: "img/pushupExplore.jpg", desc: "lorem ibusm"},
+{title: "Benchpress", picture: "img/pushupExplore.jpg", desc: "lorem ibusm"},
+{title: "Benchpressasdasdsa", picture: "img/pushupExplore.jpg", desc: "lorem ibusm"}
+];
 
 export function Navigation() {
     return (
@@ -24,6 +39,10 @@ export function Navigation() {
             </Route>
             <Route path="/MyPlan">
                 <MyPlan />
+            </Route>
+            <Route path="/Explore">
+            <ExploreContainer deckInfo={props1}/>
+            <ExploreContainer deckInfo={props2}/>
             </Route>
             <Route path="/About">
                 <AboutUs />

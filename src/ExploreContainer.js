@@ -1,5 +1,4 @@
 import React from 'react'; //import React library
-import ReactDOM from 'react-dom';
 
 export function renderCard(props) {
     const cardInfo = props;

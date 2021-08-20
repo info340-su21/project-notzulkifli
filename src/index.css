@@ -166,6 +166,7 @@ a:hover, button:hover{
 .tutorial-content-container {
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tutorial-content-container .explore-card-body {
@@ -190,7 +191,8 @@ a:hover, button:hover{
 
 .about-us-container{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     box-sizing: border-box;
 }
 
