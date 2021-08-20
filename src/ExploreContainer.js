@@ -3,7 +3,7 @@ import React from 'react'; //import React library
 export function renderCard(props) {
     const cardInfo = props;
     return (
-        <a className="explore-card-button" type="button" href="sample_page_pushups.html" role="button">
+        <a className="explore-card-button" type="button" href={"/"+cardInfo.title} role="button">
             <div className="explore-card-body">
                 <div>
                     <h3 className="explore-card-title">
@@ -26,10 +26,11 @@ export function renderCard(props) {
 export function TutorialContainer(props) {
     const deckInfo = props.deckInfo;
     const cards = deckInfo.map(renderCard);
+    const title = props.title;
     return (
         <div class="tutorial-container">
-            <h2 class="container-header">Exercise Tutorials:</h2>
-            <p class="time-posted">Information updated <time datetime="2021-08-04">8/4/2021</time> </p>
+            <h2 class="container-header">{title}</h2>
+            <p class="time-posted">Information updated <time datetime="2021-08-20">8/20/2021</time> </p>
             <div class="tutorial-content-container">
                 {cards}
             </div>
@@ -39,15 +40,12 @@ export function TutorialContainer(props) {
 
 export function ExploreContainer(props) {
     const deckInfo = props.deckInfo;
-    const title = "test Title";
+    const title = props.title;
     return (
-        <main>
-            <h1 class="page-title">{title}:</h1>
-            <section>
-                <div class="container">
-                    < TutorialContainer deckInfo={deckInfo}/>
-                </div>
-            </section>
-        </main>
+        <section>
+            <div class="container">
+                < TutorialContainer title={title} deckInfo={deckInfo}/>
+            </div>
+        </section>
     )
 }
