@@ -4,7 +4,7 @@ export function MyPlan() {
         <main>
                 <h1>Check Body Statistic:</h1>
                 
-                <section class="myplan-container">
+                <section className="myplan-container">
                     <div>
                         <form action="">
                             <label for="height">Height(cm):</label><br></br>
@@ -14,7 +14,7 @@ export function MyPlan() {
                             <input type="submit" value="Submit" />
                         </form>
                     </div>
-                    <div class="bmi-scale">
+                    <div className="bmi-scale">
                     </div>
                 </section>
                     
