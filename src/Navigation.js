@@ -6,8 +6,10 @@ import { ExploreContainer } from "./ExploreContainer";
 import ExploreExerciseAnalyze from "./ExploreExerciseAnalyze";
 import ExploreNutritionAnalyze from "./ExploreNutritionAnalyze";
 import ExerciseAndDiets from './ExerciseAndDiets.json';
+import React, { useState } from 'react';
 
 export function Navigation() {
+
     function renderExerciseExploreRoute(cardInfo) {
         return (
             <Route path={"/"+cardInfo.title}>
@@ -28,9 +30,22 @@ export function Navigation() {
             </Route>
         )
     }
-    const exploreExerciseRoutes = ExerciseAndDiets.exerciseInfo.map(renderExerciseExploreRoute)
-    const exploreNutritionRoutes = ExerciseAndDiets.nutritionInfo.map(renderNutritionExploreRoute)
+    
+    const exploreExerciseRoutes = ExerciseAndDiets.exerciseInfo.map(renderExerciseExploreRoute);
+    const exploreNutritionRoutes = ExerciseAndDiets.nutritionInfo.map(renderNutritionExploreRoute);
 
+    const displayedExerciseCards = [];
+    const displayedNutritionCards = [];
+    const [searchTerm, setSearchTerm] = useState("");
+
+    function searchTermHelper(val) {
+        if (searchTerm == "") {
+            return val
+        } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+            return val
+        }
+    }
+    
     return (
         <BrowserRouter>
         <header>
@@ -55,9 +70,36 @@ export function Navigation() {
             <Route path="/Explore">
                 <main>
                     <h1 class="page-title">Explore:</h1>
+                    <div className="searchBarExploreContainer">
+                        <input
+                            className="searchBarExplore"
+                            type="text"
+                            placeholder="Search..."
+                            onInput={e => setSearchTerm(e.target.value)}
+                            id="header-search"
+                        />    
+                    </div>
+                    {ExerciseAndDiets.exerciseInfo.filter((val) => {
+                        if (searchTerm == "") {
+                            return val
+                        } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+                            return val
+                        }
+                    }).map((val, key) => {
+                        displayedExerciseCards.push(val)
+                    })}
+                    {ExerciseAndDiets.nutritionInfo.filter((val) => {
+                        if (searchTerm == "") {
+                            return val
+                        } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+                            return val
+                        }
+                    }).map((val, key) => {
+                        displayedNutritionCards.push(val)
+                    })}
                     <section>
-                        <ExploreContainer title="Exercise Tutorials:" deckInfo={ExerciseAndDiets.exerciseInfo}/>
-                        <ExploreContainer title="Nutritional + Dietary Tutorials:" deckInfo={ExerciseAndDiets.nutritionInfo}/>
+                        <ExploreContainer title="Exercise Tutorials:" deckInfo={displayedExerciseCards}/>
+                        <ExploreContainer title="Nutritional + Dietary Tutorials:" deckInfo={displayedNutritionCards}/>
                     </section>
                 </main>
             </Route>

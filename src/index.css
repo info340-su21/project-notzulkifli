@@ -381,3 +381,17 @@ a:hover, button:hover{
         display: contents;
     }
 }
+
+.searchBarExploreContainer {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.searchBarExplore {
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+}
