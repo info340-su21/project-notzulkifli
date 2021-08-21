@@ -382,12 +382,10 @@ a:hover, button:hover{
     }
 }
 
-.searchBarExploreContainer {
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
+.bodyDesign {
     display: flex;
 }
+
 .searchBarExplore {
     margin-top: 20px;
     width: 300px;
