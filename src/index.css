@@ -395,3 +395,18 @@ a:hover, button:hover{
     font-size: 20px;
     padding-left: 10px;
 }
+
+.bookmarkButtonContainer {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bookmarkButton {
+    color: blue;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+}
