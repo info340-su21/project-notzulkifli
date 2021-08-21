@@ -1,9 +1,11 @@
+import Quote  from './Quote'
 export function MainHome() {
     return (
             <main>
                 <body>
                     <h1 className="day-header"><button className="arrow-button"><img src="img/left-arrow.png" className="day-arrow" alt="Arrow pointing left"></img></button>&nbsp;Day 1/20&nbsp;<button className="arrow-button"><img src="img/right-arrow.png" className="day-arrow" alt="Arrow pointing right"></img></button></h1>
                     <p></p>
+                    <Quote />
                     <h2 className="day-header">Did you complete your plan for today?</h2>
                     <section className="objective">
                         <div className="box-border">
