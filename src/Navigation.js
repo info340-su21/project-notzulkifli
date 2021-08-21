@@ -5,10 +5,29 @@ import { MyPlan } from "./myPlan";
 import { ExploreContainer } from "./ExploreContainer";
 import ExploreExerciseAnalyze from "./ExploreExerciseAnalyze";
 import ExploreNutritionAnalyze from "./ExploreNutritionAnalyze";
+import BookmarkCardButton from './BookmarkCardButton';
+
 import ExerciseAndDiets from './ExerciseAndDiets.json';
+
 import React, { useState } from 'react';
 
-export function Navigation() {
+export function Navigation(props) {
+    //bookmarks
+    //const bookmarkedExerciseCards = [];
+    
+    //const bookmarkedNutritionCards = [];
+
+    //search displays
+    const displayedExerciseCards = [];
+    const displayedNutritionCards = [];
+
+    /*function handleExerciseBookmark(cardInfo) {
+        console.log(bookmarkedExerciseCards);
+        let includes = false;
+        if (includes == false) {
+            bookmarkedExerciseCards.push(cardInfo)
+        }
+    } */
 
     function renderExerciseExploreRoute(cardInfo) {
         return (
@@ -17,6 +36,7 @@ export function Navigation() {
                 <section>
                     <ExploreExerciseAnalyze cardInfo={cardInfo}/>
                 </section>
+                <BookmarkCardButton cardInfo={cardInfo} howToHandleClick={props.handleExerciseBookmark}/>
             </Route>
         )
     }
@@ -34,8 +54,6 @@ export function Navigation() {
     const exploreExerciseRoutes = ExerciseAndDiets.exerciseInfo.map(renderExerciseExploreRoute);
     const exploreNutritionRoutes = ExerciseAndDiets.nutritionInfo.map(renderNutritionExploreRoute);
 
-    const displayedExerciseCards = [];
-    const displayedNutritionCards = [];
     const [searchTerm, setSearchTerm] = useState("");
 
     function searchTermHelper(val) {
@@ -66,6 +84,7 @@ export function Navigation() {
             </Route>
             <Route path="/MyPlan">
                 <MyPlan />
+                <ExploreContainer title="Favorite Exercise:" deckInfo={props.favoriteCard}/>
             </Route>
             <Route path="/Explore">
                 <main>
