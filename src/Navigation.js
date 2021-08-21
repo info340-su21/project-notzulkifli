@@ -56,14 +56,7 @@ export function Navigation(props) {
 
     const [searchTerm, setSearchTerm] = useState("");
 
-    function searchTermHelper(val) {
-        if (searchTerm == "") {
-            return val
-        } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
-            return val
-        }
-    }
-    
+  
     return (
         <BrowserRouter>
         <header>
@@ -99,7 +92,7 @@ export function Navigation(props) {
                         />    
                     </div>
                     {ExerciseAndDiets.exerciseInfo.filter((val) => {
-                        if (searchTerm == "") {
+                        if (searchTerm === "") {
                             return val
                         } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
                             return val
@@ -108,11 +101,12 @@ export function Navigation(props) {
                         displayedExerciseCards.push(val)
                     })}
                     {ExerciseAndDiets.nutritionInfo.filter((val) => {
-                        if (searchTerm == "") {
+                        if (searchTerm === "") {
                             return val
                         } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
                             return val
                         }
+
                     }).map((val, key) => {
                         displayedNutritionCards.push(val)
                     })}
