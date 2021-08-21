@@ -8,22 +8,22 @@ export function AboutUs() {
     <div className="about-us-container">
         <div className="about-us-img-border">
             <h1>John Boyle</h1>
-            <img className="about-us-img-crop" src="img/placeholder1.jpg" alt="John Boyle"></img>
+            <img className="about-us-img-crop" src="img/JohnBoyle.png" alt="John Boyle"></img>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab, magnam quaerat facilis sed perferendis corrupti et corporis fugit reiciendis, odit sapiente doloremque sequi recusandae aliquam maxime? Eligendi, ab reprehenderit.</p>
         </div>
         <div className="about-us-img-border">
             <h1>Shriyansh Sharma</h1>
-            <img className="about-us-img-crop" src="img/placeholder1.jpg" alt="Shriyansh Sharma "></img>
+            <img className="about-us-img-crop" src="img/ShriyanshSharma.png" alt="Shriyansh Sharma "></img>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio sequi ipsam unde laborum, eveniet fugit rerum voluptatum praesentium dolor aspernatur alias odit eum placeat officia quaerat, nulla illo corrupti.</p>
         </div>
         <div className="about-us-img-border">
             <h1>Zulkifli Sales</h1>
-            <img className="about-us-img-crop" src="img/placeholder1.jpg" alt="Zulkifli Sales"></img>
+            <img className="about-us-img-crop" src="img/ZulkifliSales.png" alt="Zulkifli Sales"></img>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ea aliquid optio a libero neque sapiente dignissimos illum itaque. Quia commodi rerum dolores nemo, facilis impedit ad officiis expedita voluptatem?</p>
         </div>
         <div className="about-us-img-border">
             <h1>Samuel Taylor</h1>
-            <img className="about-us-img-crop" src="img/placeholder1.jpg" alt="Samuel Taylor"></img>
+            <img className="about-us-img-crop" src="img/SamuelTaylor.png" alt="Samuel Taylor"></img>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ea aliquid optio a libero neque sapiente dignissimos illum itaque. Quia commodi rerum dolores nemo, facilis impedit ad officiis expedita voluptatem?</p>
         </div>
     </div>

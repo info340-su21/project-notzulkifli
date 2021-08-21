@@ -2,6 +2,15 @@ import Quote  from './Quote'
 export function MainHome() {
     return (
             <main>
+                <div className="bodyDesign">
+                    <div>
+                   <h1 className="HomePageDesign">Welcome to Mobile Nutrition!</h1>
+                   <img src='img/axiom-series.jpg' alt="Gym Picture"></img>
+                   </div>
+                   <div>
+                   <p className="HomePageQuote">“No man has the right to be an amateur in the matter of physical training. It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.” ― Socrates</p>
+                   </div>
+                </div>
                 <body>
                     <h1 className="day-header"><button className="arrow-button"><img src="img/left-arrow.png" className="day-arrow" alt="Arrow pointing left"></img></button>&nbsp;Day 1/20&nbsp;<button className="arrow-button"><img src="img/right-arrow.png" className="day-arrow" alt="Arrow pointing right"></img></button></h1>
                     <p></p>
